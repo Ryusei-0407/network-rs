@@ -12,3 +12,11 @@ format:
 
 lint: check
 	cargo clippy
+
+demo:
+	rustc src/demo.rs
+	./demo
+	rm demo
+
+clean:
+	cargo clean
