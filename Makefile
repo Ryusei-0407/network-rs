@@ -16,7 +16,6 @@ lint: check
 demo:
 	rustc src/demo.rs
 	./demo
-	rm demo
 
 clean:
-	cargo clean
+	cargo clean && rm demo
