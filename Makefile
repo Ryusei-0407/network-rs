@@ -1,8 +1,8 @@
 run: lint
-	cargo run -q
+	mold -run cargo run -q
 
 build: lint
-	cargo build --release
+	mold -run cargo build --release
 
 check: format
 	cargo check
