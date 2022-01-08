@@ -13,12 +13,8 @@ format:
 lint: check
 	cargo clippy
 
-demo:
-	rustc src/demo.rs
-	./demo
-
 clean:
-	cargo clean && rm demo
+	cargo clean
 
 create:
 	sudo ip tuntap add mode tap name tap-rust user r9
